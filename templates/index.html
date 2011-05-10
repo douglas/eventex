@@ -1,1 +1,162 @@
-asdfasdf
+<!doctype html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>Free CSS Template : Small Business</title>
+    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet" type="text/css">
+    <!--
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/collection.js"></script>
+    -->
+    
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE 6]>
+    <script src="js/belatedPNG.js"></script>
+    <script>
+    	DD_belatedPNG.fix('*');
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrap">
+        <nav id="mainnav">
+            <h1 id="textlogo">
+            EVENT<span>ex</span>
+            </h1>
+            
+            <ul>
+                <li class="active"><a href="{% url index %}">Home</a></li>
+            </ul>
+        </nav>
+
+        <section id="content">
+            <header id="homeheader">
+                <h2>
+                    <span>The Time has come !<br />The greatest IT event landed in Brazil</span>
+                    Even wanted to meet all the opensource stars and developers of the
+                    best software around the world ? Fear not, you time has come  - at Eventex =)
+                    <br /><br />
+                    <strong>Accepting inscriptions in: 05/15/2011 (at ingresso.com)</strong>
+                </h2>
+                
+                <img src="{{ STATIC_URL }}images/people.png" alt="header image" class="headerimg">
+            </header>
+            
+            <section id="page">
+                <header class="mainheading">
+                    <h2 class="introhead">Keynote Speakers</h2>
+                </header>
+            
+                <section id="introcol">
+                    <div class="leftcol">
+                        <h3>Agile Borat</h3>
+                        <span class="keynote_pic">
+                            <img src="{{ STATIC_URL }}images/borat.png"
+                                 alt="Agile Bortat">
+                        </span>
+                        <span class='keynote_desc'>
+                            <p>
+                            <b>The man, the legend !</b><br />
+                            Teaching the glorious concepts of agile project coaching.
+                            </p>
+                        </span>
+                    </div>
+
+                    <div class="rightcol">
+                        <h3>Saint Ignucius</h3>
+                        <span class="keynote_pic">
+                            <img src="{{ STATIC_URL }}images/ignucius.png"
+                                 alt="Saint Ignucius">
+                        </span>
+                        <span class='keynote_desc'>
+                            <p>
+                            <b>Halleluja!</b><br />
+                            Thou shall use Emacs or thou shall perish !
+                            </p>
+                        </span>
+                    </div>
+
+                    <div class="midcol">
+                        <h3>Marvim, the bot</h3>
+                        <span class="keynote_pic">
+                            <img src="{{ STATIC_URL }}images/marvim.png"
+                                 alt="Marvim">
+                        </span>
+                        <span class='keynote_desc'>
+                            <p>
+                            <b>Specialist in motivation</b><br />
+                            Received a project for yesterday, finished it and
+                            was never paid up ?! Learn how to
+                            maintain your energy and focus.
+                            </p>
+                        </span>
+                    </div>
+
+                    <div class="clear"></div>
+                </section>
+            
+                <section id="fourcols">
+                    <header class="mainheading">
+                        <h2 class="introhead">Why you should come ?</h2>
+                    </header>
+                    
+                    <div class="clear"></div>
+                    
+                    <div class="col">
+                        <h3>Great Talks !</h3>
+                        <p>Aside the keynotes, we have lots of great talks -
+                           from code, to communities, to hexadecimal-food
+                           preparing. Prepared ?!
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <h3>OpenSpaces</h3>
+                        <p>Loved one talk ? Want to talk to the author or 
+                           gather your friends to show your new uberproject ?
+                           This is the place !
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <h3>#f00d</h3>
+                        <p>Want to prove the best nerd-coder-geek f00d ?
+                           We have it and we are sure you will love it.
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <h3>Prizes =)</h3>
+                        <p>At the end of everyday of talks we are going to give
+                           some awesome prizes - from t-shirts to trips
+                           to Google =)</a>
+                        </p>
+                    </div>
+                    
+                    <div class="clear"></div>
+                </section>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <div id="bottom">
+            <a href="#">Home</a>
+            
+            <div class="clear"></div>
+        </div>
+        
+        <div id="credits">
+            2010 &copy; All Rights Reserved.
+            <a href="http://cssheaven.org"
+               title="Download more css templates">Website Template
+            </a>by CSSHeaven
+        </div>
+    </footer>
+</body>
+
+</html>
