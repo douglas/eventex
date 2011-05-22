@@ -146,7 +146,6 @@ nav, section, header, footer, article {
 }
 
 a:hover, #content a:hover {
-    color: #d35537;
     text-decoration: underline !important;
 }
 

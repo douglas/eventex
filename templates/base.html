@@ -24,13 +24,17 @@
 <body>
     <div id="wrap">
         <nav id="mainnav">
+            <a href="{% url index %}">
             <h1 id="textlogo">
             EVENT<span>ex</span>
             </h1>
+            </a>
             
+            <!--
             <ul>
                 <li class="active"><a href="{% url index %}">Home</a></li>
             </ul>
+            -->
         </nav>
 
         <section id="content">
@@ -40,7 +44,7 @@
                     Even wanted to meet all the opensource stars and developers of the
                     best software around the world ? Fear not, you time has come  - at Eventex =)
                     <br /><br />
-                    <strong>Accepting inscriptions in: 05/15/2011 (at ingresso.com)</strong>
+                    <strong>Click <a href="{% url subscription:subscribe %}" title="Subscribe">here</a> to subscribe.</strong>
                 </h2>
                 
                 <img src="{{ STATIC_URL }}images/people.png" alt="header image" class="headerimg">
@@ -52,7 +56,7 @@
 
     <footer>
         <div id="bottom">
-            <a href="#">Home</a>
+            <a href="#">Top</a>
             
             <div class="clear"></div>
         </div>
