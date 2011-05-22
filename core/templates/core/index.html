@@ -1,51 +1,6 @@
-<!doctype html>
+{% extends 'base.html' %}
 
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8" />
-    <title>EVENTEX - The greatest IT event has landed in Brazil</title>
-    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet" type="text/css">
-    <!--
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/collection.js"></script>
-    -->
-    
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if IE 6]>
-    <script src="js/belatedPNG.js"></script>
-    <script>
-    	DD_belatedPNG.fix('*');
-    </script>
-    <![endif]-->
-</head>
-
-<body>
-    <div id="wrap">
-        <nav id="mainnav">
-            <h1 id="textlogo">
-            EVENT<span>ex</span>
-            </h1>
-            
-            <ul>
-                <li class="active"><a href="{% url index %}">Home</a></li>
-            </ul>
-        </nav>
-
-        <section id="content">
-            <header id="homeheader">
-                <h2>
-                    <span>The Time has come !<br />The greatest IT event has landed in Brazil</span>
-                    Even wanted to meet all the opensource stars and developers of the
-                    best software around the world ? Fear not, you time has come  - at Eventex =)
-                    <br /><br />
-                    <strong>Accepting inscriptions in: 05/15/2011 (at ingresso.com)</strong>
-                </h2>
-                
-                <img src="{{ STATIC_URL }}images/people.png" alt="header image" class="headerimg">
-            </header>
-            
+{% block content %}
             <section id="page">
                 <header class="mainheading">
                     <h2 class="introhead">Keynote Speakers</h2>
@@ -141,22 +96,4 @@
                 </section>
             </section>
         </section>
-    </div>
-
-    <footer>
-        <div id="bottom">
-            <a href="#">Home</a>
-            
-            <div class="clear"></div>
-        </div>
-        
-        <div id="credits">
-            2010 &copy; All Rights Reserved.
-            <a href="http://cssheaven.org"
-               title="Download more css templates">Website Template
-            </a>by CSSHeaven
-        </div>
-    </footer>
-</body>
-
-</html>
+{% endblock %}

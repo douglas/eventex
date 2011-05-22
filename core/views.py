@@ -7,4 +7,4 @@ def homepage(request):
     """ View da home """
 
     context = RequestContext(request)
-    return render_to_response('index.html', context)
+    return render_to_response('core/index.html', context)
